@@ -1,0 +1,11 @@
+Sub protected_sheet()
+
+    ActiveSheet.Protect DrawingObjects:=True, Contents:=True, Scenarios:=True
+    Range("H7").Select
+End Sub
+
+Sub unprotected_sheet()
+
+    ActiveSheet.Unprotect
+    Range("H7").Select
+End Sub

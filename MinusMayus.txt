@@ -1,0 +1,22 @@
+Sub convmays()
+
+    Application.ScreenUpdating = False
+    Set rgColA = Union(Sheets("DATOS").Range("c7:e7"), Sheets("DATOS").Range("h7:m7"))
+    Dim rg As Range
+    For Each rg In rgColA.Cells
+        rg.Value = UCase(rg.Text)
+    Next
+    Application.ScreenUpdating = True
+End Sub
+
+Sub convminus()
+
+    Application.ScreenUpdating = False
+    Set rgColA = Union(Sheets("Registro").Range("h9:h13"), Sheets("Registro").Range("k5:k9"), Sheets("Registro").Range("k13:k17"))
+    Dim rg As Range
+    For Each rg In rgColA.Cells
+        rg.Value = LCase(rg.Text)
+    Next
+    Application.ScreenUpdating = True
+
+End Sub
