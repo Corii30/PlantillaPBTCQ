@@ -1,3 +1,4 @@
+Attribute VB_Name = "MinusMayus"
 Sub convmays()
 
     Application.ScreenUpdating = False
@@ -20,3 +21,5 @@ Sub convminus()
     Application.ScreenUpdating = True
 
 End Sub
+
+

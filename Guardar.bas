@@ -1,3 +1,4 @@
+Attribute VB_Name = "Guardar"
 Sub Guardar()
     
 'Macro que evita que se repitan el doc. Identidad en la base de datos
@@ -49,3 +50,4 @@ Sub Guardar()
     
     'Fin de la macro
 End Sub
+

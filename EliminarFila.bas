@@ -1,4 +1,6 @@
+Attribute VB_Name = "EliminarFila"
 Sub eliminar_fila()
+Attribute eliminar_fila.VB_ProcData.VB_Invoke_Func = " \n14"
     Application.ScreenUpdating = False
     Sheets("DATOS").Select
     Rows("1048576:1048576").Select
@@ -9,3 +11,5 @@ Sub eliminar_fila()
     Range("H7").Select
     Application.ScreenUpdating = True
 End Sub
+
+

@@ -1,3 +1,4 @@
+Attribute VB_Name = "Registrar"
 Sub registro()
     Application.ScreenUpdating = False
     Sheets("DATOS").Select
@@ -28,12 +29,12 @@ Sub registro()
         :=False, Transpose:=True
     Sheets("Registro").Select
     Application.CutCopyMode = False
-    Range("K7,K9").Select
+    Range("K5,K7,K9").Select
     Selection.Copy
     Sheets("DATOS").Select
-    Range("I7:J7").Select
+    Range("H7:J7").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
+        :=False, Transpose:=True
     Sheets("Registro").Select
     Application.CutCopyMode = False
     Range("K13,K15,K17").Select
@@ -100,3 +101,4 @@ Sub registro()
     Range("H7").Select
     Application.ScreenUpdating = True
 End Sub
+

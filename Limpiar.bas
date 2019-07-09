@@ -1,9 +1,12 @@
+Attribute VB_Name = "Limpiar"
 Sub Limpiar()
     Application.ScreenUpdating = False
     Application.EnableEvents = True
     Range("K17").Select
     Selection.ClearContents
     Range("K15").Select
+    Selection.ClearContents
+    Range("K13").Select
     Selection.ClearContents
     Range("K11").Select
     Selection.ClearContents

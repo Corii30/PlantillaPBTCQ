@@ -1,3 +1,4 @@
+Attribute VB_Name = "Fecha"
 Sub Fecha()
     Application.ScreenUpdating = False
     Sheets("Registro").Select Range("K11").Select
@@ -10,3 +11,4 @@ Sub Fecha()
     Range("H7").Select
     Application.ScreenUpdating = True
 End Sub
+

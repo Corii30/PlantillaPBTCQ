@@ -1,4 +1,6 @@
+Attribute VB_Name = "Editar"
 Sub buscar()
+Attribute buscar.VB_ProcData.VB_Invoke_Func = " \n14"
     Application.ScreenUpdating = False
     Range("H5").Select
     ActiveCell.FormulaR1C1 = _
@@ -6,6 +8,7 @@ Sub buscar()
     Range("H5").Select
     Selection.Copy
     Range("H9,H11,H13,H15,H17,K5,K9,K11,K13,K15,K17").Select
+    Range("K17").Activate
     Selection.PasteSpecial Paste:=xlPasteFormulas, Operation:=xlNone, _
         SkipBlanks:=False, Transpose:=False
     Application.CutCopyMode = False
@@ -100,9 +103,11 @@ Sub buscar()
     Selection.Copy
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
         :=False, Transpose:=False
+    Application.CutCopyMode = False
     Range("H7").Select
-    Range("H7").Activate
-    
     MinusMayus.convminus
     Application.ScreenUpdating = True
 End Sub
+
+
+

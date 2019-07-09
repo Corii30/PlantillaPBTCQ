@@ -1,3 +1,4 @@
+Attribute VB_Name = "Reemplazar"
 Sub Reemplazar()
 
 Set h1 = Sheets("Registro") 'Cambiar "principal" por la hoja que contenga el n° de registro que se desee reemplazar
@@ -68,3 +69,4 @@ Limpiar.Limpiar
 
 End If
 End Sub
+
