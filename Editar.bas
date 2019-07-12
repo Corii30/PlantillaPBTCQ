@@ -51,6 +51,7 @@ Attribute buscar.VB_ProcData.VB_Invoke_Func = " \n14"
     Selection.Copy
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
         :=False, Transpose:=False
+    Application.CutCopyMode = False
     Range("H11").Select
     Application.CutCopyMode = False
     Selection.Copy
@@ -67,6 +68,10 @@ Attribute buscar.VB_ProcData.VB_Invoke_Func = " \n14"
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
         :=False, Transpose:=False
     Range("K5").Select
+    Selection.Copy
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+    Range("K7").Select
     Application.CutCopyMode = False
     Selection.Copy
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
@@ -94,8 +99,8 @@ Attribute buscar.VB_ProcData.VB_Invoke_Func = " \n14"
     Application.CutCopyMode = False
     Range("H7").Select
     
-    convminus
-    
+    MinusMayus.convminus    
+
     Application.ScreenUpdating = True
 End Sub
 

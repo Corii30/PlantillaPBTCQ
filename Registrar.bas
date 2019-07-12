@@ -20,6 +20,7 @@ Sub registro()
         :=False, Transpose:=True
     Sheets("Registro").Select
     Application.CutCopyMode = False
+<<<<<<< HEAD
     Range("H5,H9,H11,H13,H15").Select
     Range("H15").Activate
     Selection.Copy
@@ -95,7 +96,8 @@ Sub registro()
         .TintAndShade = 0
         .Weight = xlThin
     End With
-    Application.Run "Bd_Biblioteca_TCQ.xlsm!convmays"
+
+    MinusMayus.convmays
     Range("A7").Select
     Sheets("Registro").Select
     Range("H7").Select

@@ -13,6 +13,7 @@ Sub convmays()
     Else
         rg2.Value = ""
     End If
+
     Application.ScreenUpdating = True
 End Sub
 
@@ -30,7 +31,7 @@ Sub convminus()
     Else
         rg2.Value = ""
     End If
-    
+
     Application.ScreenUpdating = True
 
 End Sub

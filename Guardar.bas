@@ -3,7 +3,7 @@ Sub Guardar()
     
 'Macro que evita que se repitan el doc. Identidad en la base de datos
 
-    eliminar_fila
+    EliminarFila.eliminar_fila
 
     Set h1 = Sheets("Registro") 'Colocar el nombre de la hoja donde está el dato que se quiere evaluar.
     Set h2 = Sheets("DATOS") 'Colocar el nombre de la hoja donde se encuentran los registros para ser comparado con el dato mencionado más arriba.
@@ -38,15 +38,15 @@ Sub Guardar()
         Exit Sub
     End If
     
-    'A continuación colocar el nombre de las macros (registro).
-    
-    registro
+    'A continuación colocar el nombre de las macros (registro).    
+
+    Registrar.registro
     
     MsgBox "El dato se guardó", vbInformation, "GUARDAR" 'Entre las primeras comillas mensaje que se muestra si su macro se ejecutó satisfactoriamente.
     
-    'A continuación colocar el nombre de la macro limpiar
-    
-    Limpiar
+    'A continuación colocar el nombre de la macro limpiar    
+
+    Limpiar.Limpiar
     
     'Fin de la macro
 End Sub

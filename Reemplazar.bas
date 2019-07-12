@@ -50,6 +50,7 @@ If Not b Is Nothing Then 'Cambiar B por la columna donde están los datos que se 
     End If
     
     Set rgColA = Union(Range(h2.Cells(b.Row, 3), h2.Cells(b.Row, 5)), Range(h2.Cells(b.Row, 8), h2.Cells(b.Row, 10)))
+
     Dim rg As Range
     For Each rg In rgColA.Cells
         rg.Value = UCase(rg.Text)
@@ -68,7 +69,7 @@ Else
 End If
 'A continuación colocar la macro limpiar
 
-Limpiar
+Limpiar.Limpiar
 
 End If
 End Sub

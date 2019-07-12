@@ -4,6 +4,8 @@ Sub Limpiar()
     Application.EnableEvents = True
     Range("K15").Select
     Selection.ClearContents
+    Range("K13").Select
+    Selection.ClearContents
     Range("K11").Select
     Selection.ClearContents
     Range("K9").Select
@@ -19,10 +21,10 @@ Sub Limpiar()
     Range("H9").Select
     Selection.ClearContents
     Range("H7").Select
-    Selection.ClearContents
-    
-    aumento_codigo
-    Fecha
+    Selection.ClearContents    
+
+    AumentoCod.aumento_codigo
+    Fecha.Fecha
     
     Application.ScreenUpdating = True
 End Sub
